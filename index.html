@@ -1,0 +1,34 @@
+<head>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id='header'>
+        <h1>JS Flashcards</h1>
+        <div class="showHideHotkeysButton">
+            <button onClick="showHideLightText()">hotkeys</button>
+        </div>
+    </div>
+    <p id="label">Front</p>
+    <p id="front">
+    <!-- term lives here   -->
+    </p><br>
+    <hr id="line"><br>
+    <p id="label">Back</p>
+    <div id="back">
+    <!-- definition lives here   -->
+    </div><br>
+    <div id ="activeCardButtons">
+    <button id="prev" onclick="prevCard()">Previous Card
+    </button>
+    <button id="flip" type="button" value="Flip" onclick="flash()">
+    Flip Card</button>
+    <button id="next" onclick="nextCard()">Next Card
+    </button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p onClick="showHideLightText()" class="lightText hide" >hotkeys &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br><span class="leftRight" title="left/right arrow keys" style="font-size:31px;position:relative;top:6px;">⇄</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prev/next</br><span title="up/down arrow keys" style="font-size:32px;position:relative;top:8px;">⇵</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flip card</br>&nbsp;&nbsp;<span class="return" title="return key" style="font-size:36px;position:relative;top:6px;">↵</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add card</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span title="delete" class="del" style="height:10px;font-size:32px;position:relative;top:8px;">␡</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clear deck</p>
+    <script src="/script.js"></script>
+</body>
